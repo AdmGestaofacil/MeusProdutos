@@ -19,7 +19,7 @@ namespace GestaoFacil.Business.Models.Produtos
 
         public Guid FornecedorId { get; set; }
 
-        /*EF RELATIONS*/
+        /*EF RELATIONS* /
         public Fornecedor Fornecedor { get; set; }
 
     }
