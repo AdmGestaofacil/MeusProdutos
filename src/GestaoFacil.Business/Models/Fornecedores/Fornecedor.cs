@@ -10,7 +10,7 @@ namespace GestaoFacil.Business.Models.Fornecedores
 {
     public class Fornecedor :Entity
     {
-        public string nome { get; set; }
+        public string Nome { get; set; }
         public string Documento { get; set; }
         public TipoFornecedor TipoFornecedor { get; set; }
         public Endereco Endereco { get; set; }
