@@ -11,7 +11,7 @@ namespace GestaoFacil.Business.Models.Fornecedores
     {
         /*
          Estou criando metodos especilizados para essa entidade pois os outros metodos 
-        já estao sendo herdados da interface IRepository.
+        já estao sendo herdados da interface IRepository GENERICA.
          */
         Task<Fornecedor> ObterFornecedorEndereco(Guid id);
         Task<Fornecedor> ObterFornecedorProdutoEndereco(Guid id);

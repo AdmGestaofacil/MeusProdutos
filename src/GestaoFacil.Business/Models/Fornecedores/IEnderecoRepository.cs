@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestaoFacil.Business.Core.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace GestaoFacil.Business.Models.Fornecedores
 {
-    public interface IEnderecoRepository
+    public interface IEnderecoRepository : IRepository<Endereco>
     {
-        Task<Endereco> ObterEnderecoPorFornecedor(Guid Fornecedorid);
+        Task<Endereco> ObterEnderecoPorFornecedor(Guid fornecedorid);
     }
 }

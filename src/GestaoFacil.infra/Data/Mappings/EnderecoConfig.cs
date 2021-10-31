@@ -34,16 +34,16 @@ namespace GestaoFacil.infra.Data.Mappings
                 .HasMaxLength(250);
 
             Property(c => c.Bairro)
-                .IsRequired()
-                .HasMaxLength(100);
+                .IsRequired();
+                //.HasMaxLength(100);
 
             Property(c => c.Cidade)
-                .IsRequired()
-                .HasMaxLength(100);
+                .IsRequired();
+            //.HasMaxLength(100);
 
             Property(c => c.Estado)
-                .IsRequired()
-                .HasMaxLength(100);
+                .IsRequired();
+                //.HasMaxLength(100);
 
             ToTable("Enderecos");
 

@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FluentValidation, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7de548da2fbae0f0, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\FluentValidation.10.3.3\lib\netstandard2.0\FluentValidation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,14 +45,29 @@
   <ItemGroup>
     <Compile Include="Core\Data\IRepository.cs" />
     <Compile Include="Core\Models\Entity.cs" />
+    <Compile Include="Core\Notificacoes\INotificador.cs" />
+    <Compile Include="Core\Notificacoes\Notificacao.cs" />
+    <Compile Include="Core\Notificacoes\Notificacoes.cs" />
+    <Compile Include="Core\Service\BaseService.cs" />
+    <Compile Include="Core\Validations\Documentos\ValidacaoDocs.cs" />
     <Compile Include="Models\Fornecedores\Endereco.cs" />
     <Compile Include="Models\Fornecedores\Fornecedor.cs" />
     <Compile Include="Models\Fornecedores\IEnderecoRepository.cs" />
     <Compile Include="Models\Fornecedores\IFornecedorRepository.cs" />
+    <Compile Include="Models\Fornecedores\Services\FornecedorService.cs" />
+    <Compile Include="Models\Fornecedores\Services\IFornecedorService.cs" />
     <Compile Include="Models\Fornecedores\TipoFornecedor.cs" />
+    <Compile Include="Models\Fornecedores\Validation\EnderecoValidation.cs" />
+    <Compile Include="Models\Fornecedores\Validation\FornecedorValidation.cs" />
     <Compile Include="Models\Produtos\IProdutoRepository.cs" />
     <Compile Include="Models\Produtos\Produto.cs" />
+    <Compile Include="Models\Produtos\Services\IProdutoService.cs" />
+    <Compile Include="Models\Produtos\Services\ProdutoService.cs" />
+    <Compile Include="Models\Produtos\Validation\ProdutoValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

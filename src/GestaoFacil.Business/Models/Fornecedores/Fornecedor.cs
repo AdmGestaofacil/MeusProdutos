@@ -1,4 +1,5 @@
 ﻿using GestaoFacil.Business.Core.Models;
+using GestaoFacil.Business.Models.Fornecedores.Validation;
 using GestaoFacil.Business.Models.Produtos;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,21 @@ namespace GestaoFacil.Business.Models.Fornecedores
 
         /*EF RELATIONS*/
         public ICollection<Produto> Produtos { get; set; }
+
+        /*
+            podemos usar o validação abaixa para validar  a propria instancia da entidade
+             de fornecedor mas vamos fazer de outra forma
+        */
+
+        //public bool Validacao()
+        //{
+        //    var validacao = new FornecedorValidation();
+        //    var resultado = validacao.Validate(this);
+        //    return resultado.IsValid;
+        //}
+
     }
+
+
 
 }
